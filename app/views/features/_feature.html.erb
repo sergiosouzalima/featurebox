@@ -1,0 +1,11 @@
+<tr id="feature-<%= feature.id %>">
+  <td>
+    <strong>
+      <%= link_to( feature.name, edit_feature_path(feature), remote: true ) %>
+    </strong>
+  </td>
+  <td><%= link_to 'Show', feature %></td>
+  <td>
+    <%= link_to 'Destroy', feature, method: :delete, remote: true, class: 'delete-feature',  data: { confirm: 'Are you sure?' } %>
+  </td>
+</tr>

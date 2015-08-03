@@ -1,0 +1,14 @@
+$("#feature-message ul").html('');
+<% if @feature.errors.empty? %>
+  <% if params[:action] == "update" %>
+    $("tr#feature-<%= @feature.id %>").remove();
+  <% end %>
+  $('#feature-table').append('<%= j render partial: "feature", locals: {feature: @feature} %>').hide().fadeIn(400);
+<% else %>
+  <% @feature.errors.full_messages.each do |message| %>
+    $("#feature-message ul").append(
+        $('<li>').html("<%= message.html_safe %>")
+        )
+  <% end %>
+<% end %>
+$('input#feature_name').focus().val('');
