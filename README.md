@@ -1,6 +1,8 @@
 Featurebox
 ================
 
+Just an app to learn how to deal with ajax calls.
+
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 Rails 4.2.3 is open source and supported by subscribers. Please join FeatureBox to support development of Rails 4.2.3.
